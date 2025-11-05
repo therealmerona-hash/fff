@@ -53,7 +53,7 @@ body::after {
   display:flex;
   justify-content:center;
   align-items:center;
-  margin-top:70px;
+  margin-top:100px; /* تم إنزال البطاقة قليلاً */
   position:relative;
   z-index:2;
 }
@@ -87,7 +87,7 @@ body::after {
   border:5px solid #fff;
   box-shadow:0 10px 25px rgba(0,0,0,0.2);
   position:absolute;
-  bottom:-50px;
+  bottom:-55px; /* نزلناه أكثر شوي للتوازن */
   left:50%;
   transform:translateX(-50%);
   z-index:5;
@@ -96,7 +96,7 @@ body::after {
 /* ===== النصوص ===== */
 .container {
   text-align:center;
-  margin-top:130px;
+  margin-top:160px; /* زادت المسافة عشان الافتار نزل */
   padding:0 25px 60px;
   color:var(--dark);
 }
@@ -118,7 +118,8 @@ h2 {
 
 .phone {
   font-size:1rem;
-  color:#333;
+  color:#2c2c2c; /* تم تغييره من الأزرق إلى رمادي أنيق */
+  font-weight:300;
   margin-bottom:30px;
 }
 
@@ -222,7 +223,7 @@ h2 {
 function shareProfile() {
   const shareData = {
     title: "Hamed Al-Zain | COO",
-    text: "بطاقة الاتصال الخاصة بـ Hamed Al-Zain – Chief Operating Officer (COO) في Muzn Tuwaiq",
+    text: "بطاقة الاتصال الخاصة بـ Hamed Al-Zain – Chief Operating Officer (COO)",
     url: window.location.href
   };
   if (navigator.share) {
